@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <job>
+  <stm:metadataList>
+   <stm:metadata name="dc:date" content="2023-06-09T09:27:17+01:00"/>
+   <stm:metadata name="dc:creator" content="sacpjk"/>
+   <stm:metadata name="cmlm:insilico" content="Molpro"/>
+  </stm:metadataList>
+  <platform pid="29844">
+   <version major="2023" minor="1" SHA="8ebb0dd001088a5c915591db1a321413035db0b1"
+     integer_bits="64" parallelism="serial">
+    2023.1
+    <date year="2023" month="6" day="9" hour="9" minute="27" second="17">
+     2023-06-09T09:27:17
+    </date>
+   </version>
+   <licence id="peterk"/>
+   <parallel processes="1" nodes="1" all_processes="1" openmp="1"/>
+   <dimensions natom="400" nvalence="500" nvalence_pno="1000" nbasis="12000" nstate="100"
+     nsymm="16" nrec="1024" nprim="2" ncol="100"/>
+  </platform>
+  <jobstep command="UHF-SCF" commandset="SCFPRO">
+   <cml:molecule>
+    <cml:symmetry pointGroup="C1">
+    </cml:symmetry>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.78287141" y3="-0.9503488E-01" z3="0.8308E-03"/>
+     <cml:atom id="a2" elementType="O" x3="1.72258178" y3="-0.21169693" z3="0.5568E-03"/>
+     <cml:atom id="a3" elementType="H" x3="0.43809243" y3="-0.22102315" z3="0.32228E-02"/>
+     <cml:atom id="a4" elementType="H" x3="-1.09691164" y3="-0.33625308" z3="1.01049616"/>
+     <cml:atom id="a5" elementType="H" x3="-1.00205133" y3="0.93023159" z3="-0.27765832"/>
+     <cml:atom id="a6" elementType="H" x3="-1.12409548" y3="-0.8131164" z3="-0.73728104"/>
+     <cml:atom id="a7" elementType="H" x3="1.84525565" y3="0.74689284" z3="-0.1672E-03"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a2 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+     <cml:bond atomRefs2="a1 a6"/>
+     <cml:bond atomRefs2="a2 a7"/>
+    </cml:bondArray>
+   </cml:molecule>
+   <error/>

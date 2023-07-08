@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <job>
+  <stm:metadataList>
+   <stm:metadata name="dc:date" content="2023-06-09T09:27:15+01:00"/>
+   <stm:metadata name="dc:creator" content="sacpjk"/>
+   <stm:metadata name="cmlm:insilico" content="Molpro"/>
+  </stm:metadataList>
+  <platform pid="29692">
+   <version major="2023" minor="1" SHA="8ebb0dd001088a5c915591db1a321413035db0b1"
+     integer_bits="64" parallelism="serial">
+    2023.1
+    <date year="2023" month="6" day="9" hour="9" minute="27" second="15">
+     2023-06-09T09:27:15
+    </date>
+   </version>
+   <licence id="peterk"/>
+   <parallel processes="1" nodes="1" all_processes="1" openmp="1"/>
+   <dimensions natom="400" nvalence="500" nvalence_pno="1000" nbasis="12000" nstate="100"
+     nsymm="16" nrec="1024" nprim="2" ncol="100"/>
+  </platform>
+  <jobstep command="UHF-SCF" commandset="SCFPRO">
+   <cml:molecule>
+    <cml:symmetry pointGroup="C1">
+    </cml:symmetry>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="0.24E-06" y3="0.48549076" z3="0.0"/>
+     <cml:atom id="a2" elementType="H" x3="1.0534281" y3="0.73734579" z3="0.0"/>
+     <cml:atom id="a3" elementType="H" x3="-0.5266269" y3="0.73770298" z3="0.91224866"/>
+     <cml:atom id="a4" elementType="H" x3="-0.5266269" y3="0.73770298" z3="-0.91224866"/>
+     <cml:atom id="a5" elementType="H" x3="-0.25976E-03" y3="-0.89709276" z3="0.0"/>
+     <cml:atom id="a6" elementType="H" x3="0.8524E-04" y3="-1.80114975" z3="0.0"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray>
+   </cml:molecule>
+   <property name="Energy" method="UHF" principal="true" stateSymmetry="1" stateNumber="1"
+     value="-40.660106469789"/>
+   <property name="One-electron energy" method="UHF" value="-83.8201806473715"/>
+   <property name="Two-electron energy" method="UHF" value="27.8314551009429"/>
+   <property name="Kinetic energy" method="UHF" value="40.6041848468589"/>
+   <property name="Nuclear energy" method="UHF" value="15.3286190766396"/>
+   <property name="Virial quotient" method="UHF" value="-1.00137723791626"/>
+   <property name="Dipole moment" method="UHF" principal="true" stateSymmetry="1"
+     stateNumber="1"
+     value="0.135067525013509E-04 0.3532922193493 -0.646911405213284E-14"/>
+   <time start="09:27:15" end="09:27:16" cpu="0.21" system="0.14" real="1.19"/>
+   <storage units="megabyte" memory="6144.0" sf="0.0" df="34.69" eaf="0.0"/>
+   <summary overall_method="UHF/cc-pVDZ"/>
+  </jobstep>
+   <error/>
+  </molecule>
+  <input>
+   <p>symmetry,nosym</p>
+   <p>geometry={</p>
+   <p>           6</p>
+   <p>    C          0.00000024      0.48549076      0.00000000</p>
+   <p>    H          1.05342810      0.73734579      0.00000000</p>
+   <p>    H         -0.52662690      0.73770298      0.91224866</p>
+   <p>    H         -0.52662690      0.73770298     -0.91224866</p>
+   <p>    H         -0.00025976     -0.89709276      0.00000000</p>
+   <p>    H          0.00008524     -1.80114975      0.00000000</p>
+   <p>}</p>
+   <p>basis=cc-pVDZ</p>
+   <p>spin=1</p>
+   <p>uhf</p>
+   <p>{put,xml;noorbitals,nobasis}</p>
+  </input>
+  <diagnostics warnings="0"/>
+ </job>
+</molpro>

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <job>
+  <stm:metadataList>
+   <stm:metadata name="dc:date" content="2023-06-09T09:27:14+01:00"/>
+   <stm:metadata name="dc:creator" content="sacpjk"/>
+   <stm:metadata name="cmlm:insilico" content="Molpro"/>
+  </stm:metadataList>
+  <platform pid="29572">
+   <version major="2023" minor="1" SHA="8ebb0dd001088a5c915591db1a321413035db0b1"
+     integer_bits="64" parallelism="serial">
+    2023.1
+    <date year="2023" month="6" day="9" hour="9" minute="27" second="14">
+     2023-06-09T09:27:14
+    </date>
+   </version>
+   <licence id="peterk"/>
+   <parallel processes="1" nodes="1" all_processes="1" openmp="1"/>
+   <dimensions natom="400" nvalence="500" nvalence_pno="1000" nbasis="12000" nstate="100"
+     nsymm="16" nrec="1024" nprim="2" ncol="100"/>
+  </platform>
+  <jobstep command="HF-SCF" commandset="SCFPRO">
+   <cml:molecule>
+    <cml:symmetry pointGroup="C1">
+    </cml:symmetry>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="0.66559385" y3="0.0" z3="0.0"/>
+     <cml:atom id="a2" elementType="C" x3="-0.66559385" y3="0.0" z3="0.0"/>
+     <cml:atom id="a3" elementType="H" x3="1.23167063" y3="-0.92149339" z3="0.0"/>
+     <cml:atom id="a4" elementType="H" x3="1.23167063" y3="0.92149339" z3="0.0"/>
+     <cml:atom id="a5" elementType="H" x3="-1.23167063" y3="-0.92149339" z3="0.0"/>
+     <cml:atom id="a6" elementType="H" x3="-1.23167063" y3="0.92149339" z3="0.0"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a2 a5"/>
+     <cml:bond atomRefs2="a2 a6"/>
+    </cml:bondArray>
+   </cml:molecule>
+   <property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+     value="-78.0400151085142"/>
+   <property name="One-electron energy" method="RHF" value="-170.141081784072"/>
+   <property name="Two-electron energy" method="RHF" value="58.6775687470425"/>
+   <property name="Kinetic energy" method="RHF" value="77.9083342427865"/>
+   <property name="Nuclear energy" method="RHF" value="33.4234979285154"/>
+   <property name="Virial quotient" method="RHF" value="-1.00169020255673"/>
+   <property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+     stateNumber="1"
+     value="-0.123171389706373E-12 0.603711888729072E-13 -0.304540642412944E-14"/>
+   <time start="09:27:14" end="09:27:14" cpu="0.25" system="0.15" real="1.13"/>
+   <storage units="megabyte" memory="6144.0" sf="0.0" df="35.47" eaf="0.0"/>
+   <summary overall_method="HF/cc-pVDZ"/>
+  </jobstep>
+   <error/>
+  </molecule>
+  <input>
+   <p>symmetry,nosym</p>
+   <p>geometry={</p>
+   <p>           6</p>
+   <p>    C          0.66559385      0.00000000      0.00000000</p>
+   <p>    C         -0.66559385      0.00000000      0.00000000</p>
+   <p>    H          1.23167063     -0.92149339      0.00000000</p>
+   <p>    H          1.23167063      0.92149339      0.00000000</p>
+   <p>    H         -1.23167063     -0.92149339      0.00000000</p>
+   <p>    H         -1.23167063      0.92149339      0.00000000</p>
+   <p>}</p>
+   <p>basis=cc-pVDZ</p>
+   <p>hf</p>
+   <p>{put,xml;noorbitals,nobasis}</p>
+  </input>
+  <diagnostics warnings="0"/>
+ </job>
+</molpro>
