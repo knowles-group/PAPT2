@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <job>
+  <stm:metadataList>
+   <stm:metadata name="dc:date" content="2023-06-13T12:13:44+01:00"/>
+   <stm:metadata name="dc:creator" content="sacpjk"/>
+   <stm:metadata name="cmlm:insilico" content="Molpro"/>
+  </stm:metadataList>
+  <platform pid="17672">
+   <version major="2023" minor="1" SHA="8ebb0dd001088a5c915591db1a321413035db0b1"
+     integer_bits="64" parallelism="serial">
+    2023.1
+    <date year="2023" month="6" day="13" hour="12" minute="13" second="44">
+     2023-06-13T12:13:44
+    </date>
+   </version>
+   <licence id="peterk"/>
+   <parallel processes="1" nodes="1" all_processes="1" openmp="1"/>
+   <dimensions natom="400" nvalence="500" nvalence_pno="1000" nbasis="12000" nstate="100"
+     nsymm="16" nrec="1024" nprim="2" ncol="100"/>
+  </platform>
+  <jobstep command="HF-SCF" commandset="SCFPRO">
+   <cml:molecule>
+    <cml:symmetry pointGroup="C1">
+    </cml:symmetry>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="O" x3="-1.32405101" y3="0.9646867" z3="0.88212237"/>
+     <cml:atom id="a2" elementType="P" x3="-1.55403603" y3="-0.15340022" z3="-0.27983881"/>
+     <cml:atom id="a3" elementType="O" x3="-2.6923842" y3="0.7911544E-01" z3="-1.16403264"/>
+     <cml:atom id="a4" elementType="O" x3="-0.8728201E-01" y3="0.667959E-02" z3="-0.98546916"/>
+     <cml:atom id="a5" elementType="P" x3="1.28122647" y3="-0.22022769" z3="-0.14435231"/>
+     <cml:atom id="a6" elementType="O" x3="1.16222968" y3="-1.35332236" z3="0.79483311"/>
+     <cml:atom id="a7" elementType="O" x3="2.40489281" y3="-0.41354468" z3="-1.23510036"/>
+     <cml:atom id="a8" elementType="O" x3="1.61457791" y3="1.218023" z3="0.45657383"/>
+     <cml:atom id="a9" elementType="O" x3="-1.50367569" y3="-1.56347668" z3="0.42587351"/>
+     <cml:atom id="a10" elementType="H" x3="-2.16110179" y3="1.23977049" z3="1.29161539"/>
+     <cml:atom id="a11" elementType="H" x3="2.57955161" y3="0.37780562" z3="-1.77306138"/>
+     <cml:atom id="a12" elementType="H" x3="0.85844259" y3="1.5632986" z3="0.97096654"/>
+     <cml:atom id="a13" elementType="H" x3="-0.57839033" y3="-1.74540781" z3="0.75986991"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a2 a3"/>
+     <cml:bond atomRefs2="a2 a4"/>
+     <cml:bond atomRefs2="a2 a5"/>
+     <cml:bond atomRefs2="a4 a5"/>
+     <cml:bond atomRefs2="a5 a6"/>
+     <cml:bond atomRefs2="a5 a7"/>
+     <cml:bond atomRefs2="a5 a8"/>
+     <cml:bond atomRefs2="a2 a9"/>
+     <cml:bond atomRefs2="a1 a10"/>
+     <cml:bond atomRefs2="a7 a11"/>
+     <cml:bond atomRefs2="a8 a12"/>
+     <cml:bond atomRefs2="a9 a13"/>
+    </cml:bondArray>
+   </cml:molecule>
+   <error/>
+  </jobstep>
+  <input>
+   <p>symmetry,nosym</p>
+   <p>geometry={</p>
+   <p>          13</p>
+   <p>    O         -1.32405101      0.96468670      0.88212237</p>
+   <p>    P         -1.55403603     -0.15340022     -0.27983881</p>
+   <p>    O         -2.69238420      0.07911544     -1.16403264</p>
+   <p>    O         -0.08728201      0.00667959     -0.98546916</p>
+   <p>    P          1.28122647     -0.22022769     -0.14435231</p>
+   <p>    O          1.16222968     -1.35332236      0.79483311</p>
+   <p>    O          2.40489281     -0.41354468     -1.23510036</p>
+   <p>    O          1.61457791      1.21802300      0.45657383</p>
+   <p>    O         -1.50367569     -1.56347668      0.42587351</p>
+   <p>    H         -2.16110179      1.23977049      1.29161539</p>
+   <p>    H          2.57955161      0.37780562     -1.77306138</p>
+   <p>    H          0.85844259      1.56329860      0.97096654</p>
+   <p>    H         -0.57839033     -1.74540781      0.75986991</p>
+   <p>}</p>
+   <p>basis=cc-pVTZ</p>
+   <p>hf; ccsd(t)</p>
+   <p>{put,xml;noorbitals,nobasis}</p>
+  </input>
+  <diagnostics warnings="0"/>
+ </job>
+</molpro>
