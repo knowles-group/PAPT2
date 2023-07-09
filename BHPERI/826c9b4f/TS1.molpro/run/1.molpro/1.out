@@ -1,0 +1,377 @@
+
+ Working directory              : /var/folders/2v/xbgp75_9785319ghcgb4zr4r0000gp/T//molpro.GVVryJnpYD/
+ Global scratch directory       : /var/folders/2v/xbgp75_9785319ghcgb4zr4r0000gp/T//molpro.GVVryJnpYD/
+ Wavefunction directory         : /Users/sacpjk/wfu/
+ Main file repository           : /var/folders/2v/xbgp75_9785319ghcgb4zr4r0000gp/T//molpro.GVVryJnpYD/
+
+ id        : peterk
+
+ Nodes                        nprocs
+ Cardiff-University-G34YLXT77Y    1
+ GA implementation: MPI file
+ GA implementation (serial work in mppx): MPI file
+
+ Using customized tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; minvec=7
+ default implementation of scratch files=df  
+
+
+ Variables initialized (1032), CPU time= 0.00 sec
+ 
+ symmetry,nosym
+ 
+ 
+ geometry={
+           10
+     H          1.88187897     -0.99345935     -0.43554356
+     C          1.06487468     -0.51861718      0.11906264
+     C         -1.06559108     -0.51780918     -0.11929244
+     C          0.68378954      0.84034730     -0.08393443
+     C         -0.68289794      0.84086830      0.08354363
+     H         -1.88269037     -0.99191235      0.43581176
+     H         -1.33865918      1.64958959      0.40321074
+     H          0.87072861     -0.97895635      1.08054498
+     H         -0.87195801     -0.97868835     -1.08060578
+     H          1.34052478      1.64863759     -0.40279754
+ }
+ basis=cc-pVTZ
+ 
+ 
+ 
+ hf; ccsd(t)
+ 
+ 
+ 
+ {put,xml;noorbitals,nobasis}
+ Commands initialized (841), CPU time= 0.01 sec, 704 directives.
+ Default parameters read. Elapsed time= 1.40 sec
+
+ Checking input...
+ Passed
+1
+
+
+                                         ***  PROGRAM SYSTEM MOLPRO  ***
+                                       Copyright, TTI GmbH Stuttgart, 2015
+                                    Version 2023.1 linked Tue Jun  6 09:54:11 2023
+
+
+ **********************************************************************************************************************************
+ LABEL *                                                                                                                                                                 
+  64 bit serial version                                                                  DATE: 12-Jun-23          TIME: 03:27:44  
+ **********************************************************************************************************************************
+
+ SHA1:             8ebb0dd001088a5c915591db1a321413035db0b1
+ **********************************************************************************************************************************
+
+ Memory per process:       393 MW
+ Total memory per node:    524 MW
+ Total GA space:           131 MW
+
+ GA preallocation disabled
+ GA check enabled
+
+ Variable memory set to 393.2 MW
+
+ ZSYMEL=NOSYM
+
+
+ Geometry recognized as XYZ
+
+ SETTING BASIS          =    CC-PVTZ
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+ Library entry H      S cc-pVTZ              selected for orbital group  1
+ Library entry H      P cc-pVTZ              selected for orbital group  1
+ Library entry H      D cc-pVTZ              selected for orbital group  1
+ Library entry C      S cc-pVTZ              selected for orbital group  2
+ Library entry C      P cc-pVTZ              selected for orbital group  2
+ Library entry C      D cc-pVTZ              selected for orbital group  2
+ Library entry C      F cc-pVTZ              selected for orbital group  2
+
+
+ PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  H       1.00    3.556235853   -1.877366087   -0.823058044
+   2  C       6.00    2.012321502   -0.980044434    0.224995781
+   3  C       6.00   -2.013675302   -0.978517535   -0.225430040
+   4  C       6.00    1.292174957    1.588026247   -0.158613085
+   5  C       6.00   -1.290490078    1.589010794    0.157874580
+   6  H       1.00   -3.557769177   -1.874442681    0.823564868
+   7  H       1.00   -2.529699224    3.117272543    0.761957869
+   8  H       1.00    1.645438602   -1.849959389    2.041934078
+   9  H       1.00   -1.647761831   -1.849452943   -2.042048973
+  10  H       1.00    2.533224697    3.115473524   -0.761177034
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  2.070573470  2-4  2.694578599  2-8  2.047588793  3-5  2.694832281  3-6  2.070579165
+     ( 1.095700294)     ( 1.425909588)     ( 1.083537327)     ( 1.426043830)     ( 1.095703308)
+
+  3- 9  2.047565750   4- 5  2.601984646   4-10  2.058247545   5- 7  2.058188501
+       ( 1.083525133)       ( 1.376910978)       ( 1.089177695)       ( 1.089146450)
+
+ Bond angles
+
+  1- 2- 4  122.70014707   1- 2- 8  113.49295204   2- 4- 5  104.37798640   2- 4-10  126.00104993
+
+  3-5-4  104.40096593   3-5-7  125.98838878   4-2-8  118.90391924   4-5-7  129.31603499
+
+  5- 3- 6  122.70521280   5- 3- 9  118.91386203   5- 4-10  129.33217381   6- 3- 9  113.49676599
+
+ NUCLEAR CHARGE:                   30
+ NUMBER OF PRIMITIVE AOS:         290
+ NUMBER OF SYMMETRY AOS:          264
+ NUMBER OF CONTRACTIONS:          204   (  204A   )
+ NUMBER OF INNER CORE ORBITALS:     0   (    0A   )
+ NUMBER OF OUTER CORE ORBITALS:     4   (    4A   )
+ NUMBER OF VALENCE ORBITALS:       22   (   22A   )
+
+
+ NUCLEAR REPULSION ENERGY  109.59304390
+
+
+ Eigenvalues of metric
+
+         1 0.230E-03 0.880E-03 0.120E-02 0.124E-02 0.126E-02 0.133E-02 0.143E-02 0.152E-02
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     896.532 MB (compressed) written to integral file ( 47.0%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:  218624505.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:  14  SEGMENT LENGTH:   15999503      RECORD LENGTH: 524288
+
+ Memory used in sort:      16.56 MW
+
+ SORT1 READ   238370566. AND WROTE   208055758. INTEGRALS IN    601 RECORDS. CPU TIME:     1.77 SEC, REAL TIME:     2.52 SEC
+ SORT2 READ   208055758. AND WROTE   218624505. INTEGRALS IN   3420 RECORDS. CPU TIME:     1.37 SEC, REAL TIME:     1.86 SEC
+
+ FILE SIZES:   FILE 1:   928.2 MBYTE,  FILE 4:  2520.8 MBYTE,   TOTAL:   3449.1 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19      815.91       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+
+ PROGRAMS   *        TOTAL       INT
+ CPU TIMES  *         8.85      8.75
+ REAL TIME  *        15.34 SEC
+ DISK USED  *         3.21 GB
+ **********************************************************************************************************************************
+
+
+ Program * Restricted Hartree-Fock
+
+ Orbital guess generated from atomic densities. Full valence occupancy:   26
+
+ Initial occupancy:  15
+
+ NELEC=   30   SYM=1   MS2= 0   THRE=1.0D-08   THRD=3.2D-06   THRG=3.2D-06  HFMA2=F  DIIS_START=2   DIIS_MAX=10   DIIS_INCORE=F
+
+ Level shifts:    0.00 (CLOSED)    0.00 (OPEN)    0.30 (GAP_MIN)
+
+ ITER           ETOT              DE          GRAD        DDIFF     DIIS  NEXP   TIME(IT)  TIME(TOT)  DIAG
+   1     -154.83623032    -154.83623032     0.00D+00     0.51D-01     0     0       1.20      2.27    start
+   2     -154.87499558      -0.03876526     0.32D-02     0.47D-02     1     0       0.99      3.26    diag
+   3     -154.88031676      -0.00532119     0.13D-02     0.14D-02     2     0       1.19      4.45    diag
+   4     -154.88118504      -0.00086828     0.43D-03     0.64D-03     3     0       1.22      5.67    diag
+   5     -154.88121151      -0.00002647     0.70D-04     0.12D-03     4     0       1.13      6.80    diag
+   6     -154.88121733      -0.00000582     0.28D-04     0.60D-04     5     0       1.21      8.01    diag
+   7     -154.88121858      -0.00000125     0.10D-04     0.24D-04     6     0       1.12      9.13    diag
+   8     -154.88121881      -0.00000023     0.36D-05     0.10D-04     7     0       1.09     10.22    fixocc
+   9     -154.88121884      -0.00000002     0.11D-05     0.34D-05     8     0       1.19     11.41    diag
+  10     -154.88121884      -0.00000000     0.32D-06     0.85D-06     9     0       1.09     12.50    diag/orth
+  11     -154.88121884      -0.00000000     0.11D-06     0.22D-06     0     0       1.22     13.72    diag
+
+ Final occupancy:  15
+
+ !RHF STATE 1.1 Energy               -154.881218839807
+  RHF One-electron energy            -424.672359315316
+  RHF Two-electron energy             160.198096579186
+  RHF Kinetic energy                  154.588827202786
+  RHF Nuclear energy                  109.593043896324
+  RHF Virial quotient                  -1.001891415067
+
+ !RHF STATE 1.1 Dipole moment          -0.00005170    -0.09333514     0.00039029
+ Dipole moment /Debye                  -0.00013140    -0.23723425     0.00099202
+
+ Orbital energies:
+
+           1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -11.248335   -11.248258   -11.228544   -11.227219    -1.116744    -0.931813    -0.856168    -0.724617    -0.663834    -0.599435
+
+          11.1         12.1         13.1         14.1         15.1         16.1         17.1
+     -0.578862    -0.525414    -0.520463    -0.342096    -0.326285     0.118732     0.143094
+
+
+ HOMO     15.1    -0.326285 =      -8.8787eV
+ LUMO     16.1     0.118732 =       3.2309eV
+ LUMO-HOMO         0.445017 =      12.1095eV
+
+ Orbitals saved in record  2100.2
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19      815.91       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+
+              2       4        1.19       700     1000      520     2100   
+                                         GEOM     BASIS   MCVARS     RHF  
+
+ PROGRAMS   *        TOTAL    HF-SCF       INT
+ CPU TIMES  *        22.57     13.72      8.75
+ REAL TIME  *        32.07 SEC
+ DISK USED  *         3.21 GB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * CCSD (Closed-shell coupled cluster)     Authors: C. Hampel, H.-J. Werner, 1991, M. Deegan, P.J. Knowles, 1992
+
+
+ Convergence thresholds:  THRVAR = 1.00D-08  THRDEN = 1.00D-06
+
+ CCSD(T)     terms to be evaluated (factor= 1.000)
+
+
+ Number of core orbitals:           4 (   4 )
+ Number of closed-shell orbitals:  11 (  11 )
+ Number of external orbitals:     189 ( 189 )
+
+ Molecular orbitals read from record     2100.2  Type=RHF/CANONICAL  
+
+ Number of N-1 electron functions:              11
+ Number of N-2 electron functions:              66
+ Number of singly external CSFs:              2079
+ Number of doubly external CSFs:           2162160
+ Total number of CSFs:                     2164240
+
+ Length of J-op  integral file:               0.00 MB
+ Length of K-op  integral file:               2.92 MB
+ Length of 3-ext integral record:             0.00 MB
+
+ Memory could be reduced to 96.95 Mwords without degradation in triples
+
+ Integral transformation finished. Total CPU:   6.37 sec, npass=  1  Memory used:  56.67 MW
+
+ Reference energy:                   -154.88121884
+
+ MP2 singlet pair energy:              -0.43727533
+ MP2 triplet pair energy:              -0.23978375
+ MP2 correlation energy:               -0.67705907
+ MP2 total energy:                   -155.55827791
+
+ SCS-MP2 correlation energy:           -0.67392917   (PS=  1.200000  PT=  0.333333)
+ SCS-MP2 total energy:               -155.55514801
+
+ ITER.      SQ.NORM     CORR.ENERGY   TOTAL ENERGY   ENERGY CHANGE        DEN1      VAR(S)    VAR(P)  DIIS     TIME  TIME/IT
+   1      1.24576286    -0.70009827  -155.58131711    -0.02303920    -0.00350460  0.30D-02  0.50D-02  1  1    36.25     7.60
+   2      1.26529917    -0.70332481  -155.58454365    -0.00322654    -0.01745055  0.58D-04  0.78D-03  2  2    43.99     8.01
+   3      1.27456246    -0.70365322  -155.58487206    -0.00032841    -0.00428637  0.28D-04  0.97D-04  3  3    51.46     8.04
+   4      1.27901302    -0.70381713  -155.58503597    -0.00016390    -0.00118958  0.27D-05  0.15D-04  4  4    59.14     8.11
+   5      1.28066692    -0.70385434  -155.58507318    -0.00003721    -0.00030792  0.87D-06  0.14D-05  5  5    67.02     8.22
+   6      1.28107989    -0.70384559  -155.58506443     0.00000875    -0.00004846  0.15D-06  0.10D-06  6  6    74.82     8.28
+   7      1.28113317    -0.70384568  -155.58506452    -0.00000009     0.00000002  0.52D-07  0.11D-07  6  2    82.83     8.36
+   8      1.28114893    -0.70384598  -155.58506482    -0.00000030    -0.00000047  0.12D-07  0.36D-08  6  1    90.46     8.36
+   9      1.28115523    -0.70384589  -155.58506473     0.00000009    -0.00000041  0.23D-08  0.97D-09  6  3    98.22     8.37
+
+ Norm of t1 vector:      0.07578794      S-energy:    -0.00000033      T1 diagnostic:  0.01142546
+                                                                       D1 diagnostic:  0.03523737
+                                                                       D2 diagnostic:  0.21218019 (internal)
+
+ Doubles amplitudes (print threshold =  0.500E-01):
+
+         I         J         SYM. A    SYM. B    A         B      T(IJ, AB)
+
+        11        11         1         1         1         1     -0.11123647
+
+
+ Total CPU time for triples:    126.40 sec
+
+
+ RESULTS
+ =======
+
+  Reference energy                   -154.881218839807
+  CCSD singlet pair energy             -0.489471776017
+  CCSD triplet pair energy             -0.214373791546
+  CCSD correlation energy              -0.703845892743
+
+  Triples (T) contribution             -0.037000356045
+  Total correlation energy             -0.740846248788
+
+  CCSD total energy                  -155.585064732550
+  CCSD[T] energy                     -155.622903278908
+  CCSD-T energy                      -155.621728891996
+ !CCSD(T) total energy               -155.622065088595
+
+ Timing summary (sec):
+
+ STEP                 CPU(USER)    SYS     CPU(TOT)    WALL
+ Transformation          6.47      0.52      6.99      7.45
+ CCSD iterations        91.82      3.15     94.97     75.86
+ Triples               126.40      3.94    130.34    135.00
+
+ Program statistics:
+
+ Available memory in ccsd:               393215501
+ Min. memory needed in ccsd:               5800879
+ Max. memory used in ccsd:                 7702768
+ Max. memory used in cckext:               5866254 ( 9 integral passes)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20     1132.83       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+
+              2       4        1.19       700     1000      520     2100   
+                                         GEOM     BASIS   MCVARS     RHF  
+
+ PROGRAMS   *        TOTAL   CCSD(T)    HF-SCF       INT
+ CPU TIMES  *       224.58    202.01     13.72      8.75
+ REAL TIME  *       250.93 SEC
+ DISK USED  *         3.21 GB
+ **********************************************************************************************************************************
+
+ Dump information in style XML to xml output                                                                      
+
+ Orbitals will not be exported.
+
+ **********************************************************************************************************************************
+
+ CCSD(T)/cc-pVTZ energy=   -155.622065088595
+
+         CCSD(T)          HF-SCF
+   -155.62206509   -154.88121884
+ **********************************************************************************************************************************
+ Molpro calculation terminated
