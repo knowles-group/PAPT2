@@ -1,0 +1,30 @@
+
+!memory,1.5,g
+gthresh,energy=1e-10
+basis,cc-pVDZ
+set,cc_norm_max=1e99
+r=[1,1.2,1.4,1.6,1.8,2, 2.1, 2.2] angstrom
+geometry={N;N,N,r(i)}
+do i=1,#r
+rhf
+erhf(i)=energy
+mp2
+ermp2(i)=energy
+mp3
+ermp3(i)=energy
+mp4
+ermp4(i)=energy
+{ccsd(t),maxit=500,shiftp=.4}
+eccsd(i)=energc,eccsdt(i)=energy
+papt;mp2
+erpapt2(i)=energy
+papt;mp3
+erpapt3(i)=energy
+papt;mp4
+erpapt4(i)=energy
+{ccsd(t),maxit=500,shiftp=.4}
+eccsdp(i)=energc,eccsdpt(i)=energy
+fci
+efci(i)=energy
+enddo
+put,xml
